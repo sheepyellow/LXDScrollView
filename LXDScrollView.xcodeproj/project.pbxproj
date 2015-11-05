@@ -15,6 +15,7 @@
 		EFE599881BE9A8C500661948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE599861BE9A8C500661948 /* LaunchScreen.storyboard */; };
 		EFE599931BE9A8C500661948 /* LXDScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE599921BE9A8C500661948 /* LXDScrollViewTests.m */; };
 		EFE5999E1BE9A8C500661948 /* LXDScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE5999D1BE9A8C500661948 /* LXDScrollViewUITests.m */; };
+		EFE599AE1BE9A9F000661948 /* LXDScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE599AD1BE9A9F000661948 /* LXDScrollView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		EFE599991BE9A8C500661948 /* LXDScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXDScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE5999D1BE9A8C500661948 /* LXDScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXDScrollViewUITests.m; sourceTree = "<group>"; };
 		EFE5999F1BE9A8C500661948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE599AC1BE9A9F000661948 /* LXDScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDScrollView.h; sourceTree = "<group>"; };
+		EFE599AD1BE9A9F000661948 /* LXDScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		EFE599771BE9A8C500661948 /* LXDScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				EFE599AB1BE9A8E200661948 /* LXDScrollView */,
 				EFE5997B1BE9A8C500661948 /* AppDelegate.h */,
 				EFE5997C1BE9A8C500661948 /* AppDelegate.m */,
 				EFE5997E1BE9A8C500661948 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				EFE5999F1BE9A8C500661948 /* Info.plist */,
 			);
 			path = LXDScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		EFE599AB1BE9A8E200661948 /* LXDScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				EFE599AC1BE9A9F000661948 /* LXDScrollView.h */,
+				EFE599AD1BE9A9F000661948 /* LXDScrollView.m */,
+			);
+			path = LXDScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE599AE1BE9A9F000661948 /* LXDScrollView.m in Sources */,
 				EFE599801BE9A8C500661948 /* ViewController.m in Sources */,
 				EFE5997D1BE9A8C500661948 /* AppDelegate.m in Sources */,
 				EFE5997A1BE9A8C500661948 /* main.m in Sources */,
@@ -412,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LXDScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.sindrilin.com.LXDScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LXDScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.sindrilin.com.LXDScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";

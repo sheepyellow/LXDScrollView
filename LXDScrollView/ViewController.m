@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LXDScrollView.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    LXDScrollView * scrollView = [[LXDScrollView alloc] initWithFrame: CGRectMake(0, 0, 200, 180)];
+    scrollView.backgroundColor = [UIColor orangeColor];
+    scrollView.center = self.view.center;
+    scrollView.contentInsets = UIEdgeInsetsMake(20, 0, 0, 0);
+    [self.view addSubview: scrollView];
+    
+    UIView * subview = [[UIView alloc] initWithFrame: CGRectMake(60, 20, 180, 180)];
+    subview.backgroundColor = [UIColor blueColor];
+    [scrollView addSubview: subview];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
 
 @end
