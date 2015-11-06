@@ -17,7 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     LXDScrollView * scrollView = [[LXDScrollView alloc] initWithFrame: CGRectMake(0, 0, 200, 180)];
     scrollView.backgroundColor = [UIColor orangeColor];
     scrollView.center = self.view.center;
